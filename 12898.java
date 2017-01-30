@@ -18,7 +18,6 @@ class Main
 				}
 				else
 					break;
-				
 			}
 			System.out.println("Case "+i+": "+ores+" "+ares);
 		}
