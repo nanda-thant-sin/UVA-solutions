@@ -28,7 +28,7 @@ class Main
 					if(data[i][j]=='*'){
 						if(i-1>=0 && j-1>=0 && data[i-1][j-1]!='*')
 							data[i-1][j-1]+=1;
-						if(i-1>=0 && data[i-1][j]=='*')
+						if(i-1>=0 && data[i-1][j]!='*')
 							data[i-1][j]+=1;
 						if(i-1>=0 && j+1<m && data[i-1][j+1]!='*')
 							data[i-1][j+1]+=1;
