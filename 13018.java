@@ -11,8 +11,9 @@ public class Main {
 				n = m;
 				m = temp;
 			}
-			for (int i = 1; i <= (n - m + 1); i++) {
-				System.out.println(m + i);
+			int end=n+1;
+			for (int i = m+1; i <= end; i++) {
+				System.out.println(i);
 			}
 			if(sc.hasNext()){
 				System.out.println();
