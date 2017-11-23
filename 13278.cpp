@@ -6,7 +6,7 @@ int main()
  	scanf("%d",&n);
  	if(n==0)
  	break;
- 	int x_forward[10001],x_backward[10001],xmin=10001,xmax=0,x,y;
+ 	int x_forward[10001]={0},x_backward[10001]={0},xmin=10001,xmax=0,x,y;
  	for(int i=0;i<n;i++){
 		scanf("%d",&x);
 		scanf("%d",&y);
