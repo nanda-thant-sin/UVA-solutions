@@ -46,13 +46,13 @@ class Main {
 				if (!((h.peek() >= '2' && h.peek() <= '9') || h.peek() == 'T')) {
 					char a = h.peek();
 					int count = getCount(a);
-					boolean dtwo = false;
+					boolean done = false;
 					while (count > 0) {
 						if (two) {
 							if (!p2.isEmpty())
 								h.push(p2.pop());
 							else {
-								dtwo = true;
+								done = true;
 								break;
 							}
 
@@ -60,7 +60,7 @@ class Main {
 							if (!p1.isEmpty())
 								h.push(p1.pop());
 							else {
-								dtwo = true;
+								done = true;
 								break;
 							}
 
@@ -72,7 +72,7 @@ class Main {
 							count = getCount(a);
 						}
 					}
-					if (dtwo)
+					if (done)
 						break;
 					if (two) {
 						while (!h.isEmpty())
@@ -86,9 +86,9 @@ class Main {
 
 			}
 			if (p2.size() == 0)
-				System.out.format("1%3d", p1.size());
+				System.out.format("1%3d\n", p1.size());
 			else
-				System.out.format("2%3d", p2.size());
+				System.out.format("2%3d\n", p2.size());
 		}
 		sc.close();
 	}
