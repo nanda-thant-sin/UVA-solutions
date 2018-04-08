@@ -10,7 +10,7 @@ public class Main {
 			int k = sc.nextInt();
 			int total = 2 * k * n;
 			int[] battery = new int[total];
-			for (int i = 0; i < 2 * n * k; i++) {
+			for (int i = 0; i < total; i++) {
 				battery[i] = sc.nextInt();
 			}
 			Arrays.sort(battery);
