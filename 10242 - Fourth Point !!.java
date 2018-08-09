@@ -46,14 +46,10 @@ public class Main {
 			if (Double.isNaN(xa))
 				xa = x[3];
 			double ya = y[3] - (y[1] - y[0]) / (x[1] - x[0]) * (x[3] - xa);
-			if (Double.isNaN(ya)) {
-
+			if (Double.isNaN(ya))
 				ya = y[3] - (y[1] - y[0]);
-
-			}
 			System.out.println(df.format(xa) + " " + df.format(ya));
 		}
 		sc.close();
 	}
-
 }
